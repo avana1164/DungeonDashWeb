@@ -1,0 +1,27 @@
+body{
+    background: url("ICS4UBackgroundDungeon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x:hidden;
+    height: 100%;
+    z-index: -1;
+}
+
+#title{
+    color: beige;
+    position: relative;
+    left: 680px;
+    top: 20px;
+    
+    font-style: Ravie;
+}
+
+.forminfo{
+    color: white;
+    position:relative;
+    left: 650px;
+}
+
+#formtext{
+    color: black;
+}
