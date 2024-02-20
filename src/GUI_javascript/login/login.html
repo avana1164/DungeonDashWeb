@@ -5,19 +5,24 @@
         <h1 id = "title">Dungeon Dash</h1>
     </head>
     <body>
-        
         <form>
-            <div>
+            <div id = "formtext">
                 <label class = "forminfo">Username:</label>
-                <input type="text" id = "formtext" class="forminfo" name="usertextfield">
+                <input type="text" id = "Username" class="forminfo" name="usertextfield">
             </div>
             <br>
-            <div>
+            <div id = "formtext">
                 <label class = "forminfo">Password:</label>
-                <input type="text" id = "formtext" class="forminfo" name="password">
+                <input type="text" id = "Password" class="forminfo" name="password">
             </div>
-                
+            <br>   
+            <div id = "loginbuttons">
+                <a href="C:\Users\avana\Documents\GitHub\DungeonDashWeb\src\GUI_javascript\menu\menu.html">
+                    <button>Login</button>
+                </a>   
+                <!-- Will use node.js to store the username and password in a server file<button>Register</button> -->
+            </div> 
         </form>
-    </body>
-         
+        <script src="login.js"></script>
+    </body>      
 </html>

@@ -16,6 +16,8 @@ body{
     font-style: Ravie;
 }
 
+
+
 .forminfo{
     color: white;
     position:relative;
@@ -24,4 +26,9 @@ body{
 
 #formtext{
     color: black;
+}
+
+#loginbuttons{
+    position: relative;
+    left: 700px;
 }
