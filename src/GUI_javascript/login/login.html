@@ -6,23 +6,35 @@
     </head>
     <body>
         <form>
-            <div id = "formtext">
-                <label class = "forminfo">Username:</label>
-                <input type="text" id = "Username" class="forminfo" name="usertextfield">
+            <div class="formgeneral">
+                <label id = "formtext">Username:</label>
+                <input type="text" id="Username" name="usertextfield">
             </div>
             <br>
-            <div id = "formtext">
-                <label class = "forminfo">Password:</label>
-                <input type="text" id = "Password" class="forminfo" name="password">
+            <div class="formgeneral">
+                <label id = "formtext">Password:</label>
+                <input type="text" id="Password" name="passwordtextfield">
             </div>
             <br>   
-            <div id = "loginbuttons">
-                <a href="C:\Users\avana\Documents\GitHub\DungeonDashWeb\src\GUI_javascript\menu\menu.html">
-                    <button>Login</button>
-                </a>   
-                <!-- Will use node.js to store the username and password in a server file<button>Register</button> -->
-            </div> 
         </form>
-        <script src="login.js"></script>
+        <div class="loginbuttons">
+            <button onclick="">Login</button>
+            <!-- Will use node.js to store the username and password in a server file<button>Register</button> -->
+        </div> 
+        <!-- <script>
+            const username = document.getElementById("Username");
+            const password = docuemtn.getElementById("Password");
+            if(username === null){
+                create a textbox which will pop up saying "You haven't entered a username!"
+            } else if(password === null){
+                create a textbox which will pop up saying "You haven't entered a password!"
+            } else if("username.doesNotExist(serverfile)")
+                create textbox which will pop up saying "This username does not exist!"
+            } else if("password !== password from serverfile"){
+                create textbook which will pop up saying "Password incorrect!"
+            } else {
+                window.location.href = "C:\Users\avana\Documents\GitHub\DungeonDashWeb\src\GUI_javascript\menu\menu.html";
+            }
+        </script> -->
     </body>      
 </html>

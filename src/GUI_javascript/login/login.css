@@ -16,19 +16,17 @@ body{
     font-style: Ravie;
 }
 
+#formtext{
+   color:white; 
+}
 
-
-.forminfo{
-    color: white;
+.formgeneral{
+    color: black;
     position:relative;
     left: 650px;
 }
 
-#formtext{
-    color: black;
-}
-
-#loginbuttons{
+.loginbuttons{
     position: relative;
     left: 700px;
 }
