@@ -7,9 +7,7 @@
     <body>
         <h2 id="usernameDisplay"></h2>
         <div class="menubuttons">
-            <!-- <a href="load game" -->
-            <button id="game">Start game</button>
-            <!-- <a> -->
+            <button id="game" onclick="redirectToGame()">Start game</button>
             <!-- <a href="load leaderboard" -->
             <button id="leaderboard">Leaderboard</button>
             <!-- <a> -->
@@ -22,6 +20,9 @@
             let urlParams = new URLSearchParams(window.location.search);
             let username = urlParams.get('username');
             document.getElementById("usernameDisplay").textContent = "Welcome, " + username + "!";
+            function redirectToGame(){
+                window.location.href = "C:\\Users\\avana\\Documents\\GitHub\\DungeonDashWeb\\src\\GUI_javascript\\game\\ingame.html";
+            }
         </script>
     </body>
     
