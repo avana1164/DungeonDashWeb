@@ -1,0 +1,26 @@
+body{
+    background: url("InstructionsBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x:hidden;
+    height: 100%;
+    z-index: -1;
+}
+
+#title{
+    color: beige;
+    position: relative;
+    left: 680px;    
+    font-style: Ravie;
+}
+
+#usernameDisplay{
+    color: white;
+    position:relative;
+    left: 680px;
+}
+
+.menubuttons{
+    position:relative;
+    left: 650px;
+}

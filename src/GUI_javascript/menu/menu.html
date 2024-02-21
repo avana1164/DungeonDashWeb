@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1 id="title">Dungeon Dash</h1>
+        <link rel="stylesheet" href="menu.css">
+    </head>
+    <body>
+        <h2 id="usernameDisplay"></h2>
+        <div class="menubuttons">
+            <!-- <a href="load game" -->
+            <button id="game">Start game</button>
+            <!-- <a> -->
+            <!-- <a href="load leaderboard" -->
+            <button id="leaderboard">Leaderboard</button>
+            <!-- <a> -->
+            <!-- <a href="load instructions" -->
+            <button id="instructions">Instructions</button>
+            <!-- <a> -->
+        </div>
+            
+        <script>
+            let urlParams = new URLSearchParams(window.location.search);
+            let username = urlParams.get('username');
+            document.getElementById("usernameDisplay").textContent = "Welcome, " + username + "!";
+        </script>
+    </body>
+    
+</html>

@@ -18,13 +18,13 @@
             <br>   
         </form>
         <div class="loginbuttons">
-            <button onclick="redirectToMenu()">Login</button>
+            <button onclick='redirectToMenu()'>Login</button>
             <!-- Will use node.js to store the username and password in a server file<button>Register</button> -->
         </div> 
-        <script>
-            const username = document.getElementById("Username");
-            const password = docuemtn.getElementById("Password");
+        <script>  
             function redirectToMenu(){
+                let username = document.getElementById("Username").value;
+                let password = document.getElementById("Password");
                 // if(username === null){
                 //     create a textbox which will pop up saying "You haven't entered a username!"
                 // } else if(password === null){
@@ -34,7 +34,7 @@
                 // } else if("password !== password from serverfile"){
                 //     create textbook which will pop up saying "Password incorrect!"
                 // } else {
-                window.location.href = "C:\\Users\\avana\\Documents\\GitHub\\DungeonDashWeb\\src\\GUI_javascript\\menu\\menu.html";
+                window.location.href = "C:\\Users\\avana\\Documents\\GitHub\\DungeonDashWeb\\src\\GUI_javascript\\menu\\menu.html?username=" + encodeURIComponent(username);
                 //}
             }
         </script> 
