@@ -67,7 +67,6 @@ public class Entity {
         collisionOn = false;
         spriteCounter = 0;
         spriteNum = 1;
-        collisionOn = false;
         solidArea = new Rectangle(0, 0, 60, 60);
         solidAreaDefaultX = solidArea.x;
         solidAreaDefaultY = solidArea.y;
