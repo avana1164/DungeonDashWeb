@@ -1,17 +1,26 @@
 <!DOCTYPE html>
     <html>
         <head>
-            
+            <!-- <meta charset="UTF-8"/>
+            <meta name="viewport" content="width=device-width," -->
+            <link rel="stylesheet" href="ingame.css">
         </head>
         <body>
-            <canvas height="400" width="400" id = "game"></canvas>
-            <script src="movingobjects/demon.js"></script>
+            <canvas height="320" width="180" id = "game"></canvas>
+            <!-- <script src="movingobjects/demon.js"></script>
             <script src="movingobjects/zombie.js"></script>
             <script src="movingobjects/boss.js"></script>
             <script src="movingobjects/skeleton.js"></script>
             <script src="movingobjects/wizard.js"></script>
             <script src="movingobjects/entity.js"></script>
-            <script src="movingobjects/player.js"></script>
-            <script src="drawing\drawingsurface.js"></script>
+            <script src="movingobjects/player.js"></script> -->
+            <script src="drawing/drawingsurface.js"></script>
+            <script>
+                import{DrawingSurface} from "drawing/drawingsurface.js";
+                let ds = new DrawingSurface();
+                ds.loadSprites();
+            </script>
+            
+            <!-- <script src="ingame.js"></script> -->
         </body> 
     </html>
