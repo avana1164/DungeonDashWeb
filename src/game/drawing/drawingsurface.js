@@ -100,49 +100,22 @@ class DrawingSurface {
     }
 
     loadTiles(){
-        const canvas = document.getElementById('game');
-        const ctx = canvas.getContext('2d');
-        const tileW = 40;
-        const tileH = 40;
+        var canvas = document.getElementById('imageCanvas');
+        var ctx = canvas.getContext('2d');
+        var img = new Image();
+        img.src = 'tiles\\grassdirt1.png';
+        img.onload = function(){
+            var sourceX = 50;
+            var sourceY = 50;
+            var sourceWidth = 100;
+            var sourceHeight = 100;
+            
+            var destX = 0;
+            var destY = 0;
+            var destWidth = 100;
+            var destHeight = 100;
 
-        const gridRows = 10;
-        const gridCols = 10;
-
-        const map = [
-            0,0,1,0,0,0,0,0,0,0,
-            0,0,1,0,0,0,0,0,0,0,
-            0,0,1,1,1,1,0,0,0,0,
-            0,0,0,0,0,1,0,0,0,0,
-            0,0,0,0,0,1,0,0,0,0,
-            0,0,0,0,0,1,0,0,0,0,
-            0,0,0,0,0,1,0,0,0,0,
-            0,0,0,0,0,1,1,1,1,0,
-            0,0,0,0,0,0,0,0,1,0,
-            0,0,0,0,0,0,0,0,1,0,
-        ];
-
-        const updateAll = () => {
-            drawMap();
-            window.requestAnimationFrame(updateAll);
-        }
-
-        window.onload = () => {
-            window.requestAnimationFrame(updateAll);
-        }
-        
-        const drawMap = () => {
-            for(let eachRow = 0; eachRow < gridRows; eachRow++){
-                for(let eachCol = 0; eachCol < gridCols; eachCol++){
-                    let arrayIndex = eachRow*gridRows + eachCol;
-                    if(map[arrayIndex] === 1){
-                        ctx.fillStyle = "lightgray";
-                        ctx.fillRect(tileW*eachCol, tileH*eachRow, tileW, tileH);
-                    } else {
-                        ctx.fillStyle = "black";
-                        ctx.fillRect(tileW*eachCol, tileH*eachRow, tileW, tileH);
-                    }
-                }
-            }
+            ctx.drawImage(img, sourceX, sourceY, sourceWidth, sourceHeight, destX, destY, destWidth, destHeight);
         }
     }
     /**
